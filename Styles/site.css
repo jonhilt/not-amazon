@@ -1,0 +1,85 @@
+/* purgecss start ignore */
+@tailwind base;
+
+/*a {*/
+/*    @apply text-primary font-semibold;*/
+/*}*/
+
+/*h1 {*/
+/*    @apply font-sans text-primary text-3xl mt-4 mb-2 font-bold my-6;*/
+/*}*/
+
+/*h2 {*/
+/*    @apply font-sans text-2xl text-gray-800 leading-loose mt-2 mb-2 font-semibold my-6;*/
+/*}*/
+
+/*h3 {*/
+/*    @apply font-sans text-2xl text-gray-600 leading-loose mt-2 mb-2 font-semibold my-6;*/
+/*}*/
+
+/*hr {*/
+/*    @apply my-6;*/
+/*}*/
+
+/*img {*/
+/*    @apply my-6;*/
+/*}*/
+
+/*p {*/
+/*    @apply my-4 text-lg;*/
+/*}*/
+
+/*ul {*/
+/*    @apply list-disc list-inside text-lg ml-4 leading-loose*/
+/*}*/
+
+/*ol {*/
+/*    @apply list-decimal list-inside text-lg ml-4 leading-loose*/
+/*}*/
+
+/*strong {*/
+/*    @apply text-gray-700 font-semibold*/
+/*}*/
+
+@tailwind components;
+/* purgecss end ignore */
+
+@tailwind utilities;
+
+/* purgecss start ignore */
+#blazor-error-ui {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+#blazor-error-ui .dismiss {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}
+
+input.invalid {
+    border-color: #ff3533;
+}
+
+.vimeo-full-width {
+    padding: 56.25% 0 0 0;
+    position: relative;
+}
+
+.vimeo-full-width iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* purgecss end ignore */

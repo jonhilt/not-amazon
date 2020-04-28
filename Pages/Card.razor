@@ -1,0 +1,20 @@
+@using Microsoft.AspNetCore.Components
+<div class="mr-2">
+    <img class="object-cover shadow-md" src="@ImageUrl"/>
+    <div class="mt-2">
+        <h1 class="text-lg">@Title</h1>
+        <p class="text-base text-gray-500">@Description</p>
+    </div>
+</div>
+
+@code
+{
+    [Parameter]
+    public string Title { get; set; }
+    
+    [Parameter]
+    public string Description { get; set; }
+    
+    [Parameter]
+    public string ImageUrl { get; set; }
+}

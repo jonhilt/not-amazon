@@ -1,0 +1,21 @@
+﻿@page "/"
+@using Microsoft.AspNetCore.Components
+@using System.Collections
+@using System.Collections.Generic
+
+@inherits Index_razor
+
+<div class="w-screen h-screen grid grid-cols-site grid-rows-site">
+    <header class="col-span-2 p-8 border">
+        Header
+    </header>
+    <nav class="bg-gray-600 p-8 border text-white">
+        Nav
+    </nav>
+    <section class="p-8 border">
+        @foreach (var collection in Collections)
+        {
+            <Collection Title="@collection.Title" SeeMoreLink="@collection.SeeMoreLink" Items="@collection.Items" />
+        }
+    </section>
+</div>

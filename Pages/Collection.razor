@@ -1,0 +1,28 @@
+@using Microsoft.AspNetCore.Components
+@using System.Collections.Generic
+@using NotAmazon.Models
+<section class="w-auto p-6">
+    <h1 class="flex justify-between text-xl mb-2">
+        @Title
+        <a href="@SeeMoreLink" class="text-base uppercase">See More</a>
+    </h1>
+    <section class="grid gap-3 grid-cols-1 md:grid-cols-3 lg:grid-cols-6">
+        
+        @foreach (var item in Items)
+        {
+            <Card Title="@item.Title" Description="@item.Description" ImageUrl="@item.ImageUrl"/>
+        }
+    </section>
+</section>
+
+@code
+{
+    [Parameter]
+    public string Title { get; set; } = "Featured this week";
+    
+    [Parameter]
+    public string SeeMoreLink { get; set; } = "/some-more-songs";
+    
+    [Parameter]
+    public IEnumerable<CollectionModel.CollectionItem> Items { get; set; }
+}
